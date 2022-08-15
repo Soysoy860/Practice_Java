@@ -16,7 +16,7 @@ public class ListSortStream0814 {
             numbers.add(sc.nextInt());
         }
         numbers.stream()
-                .sorted()
+                .sorted(Comparator.reverseOrder())//降順
                 .forEach(System.out::println);
     }
 }
